@@ -72,9 +72,10 @@ def passGenFunc():
                 input("\n Press any key to exit...")
             
             elif option == 2:
+                print("")
                 openPass = open("pass.txt", "r")
                 readPass = print(openPass.read())
-                print("\n" + readPass + "\n")
+                print(str(readPass) + "\n")
 
                 input("\n Press any key to exit...")
 
