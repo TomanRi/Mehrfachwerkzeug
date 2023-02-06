@@ -34,7 +34,8 @@ def passGenFunc():
             def menu():
             
                 print(" [1] Generate password")
-                print(" [2] Delete password file")
+                print(" [2] Read passList")
+                print(" [3] Delete passList")
                 print(" [0] Exit")
 
             print()
@@ -69,8 +70,15 @@ def passGenFunc():
                 f.close
 
                 input("\n Press any key to exit...")
-
+            
             elif option == 2:
+                openPass = open("pass.txt", "r")
+                readPass = print(openPass.read())
+                print("\n" + readPass + "\n")
+
+                input("\n Press any key to exit...")
+
+            elif option == 3:
             
                 os.remove("pass.txt")
 

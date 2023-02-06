@@ -1,5 +1,6 @@
 from ipTracker import getIP
 from passGen import passGenFunc
+from ipInfo import ipInfoFunc
 import os
 
 clear = lambda: os.system('cls')
@@ -24,7 +25,8 @@ while option != 0:
     def menuMain():
         print(logo + "\n")
         print(" [1] IP Tracker")
-        print(" [2] passGen")
+        print(" [2] IP Info")
+        print(" [3] passGen")
         print(" [0] Exit")
 
     print()
@@ -36,15 +38,18 @@ while option != 0:
         print("")
         getIP()
 
-        input("\n Press any key to continue...")
         clear()
-
 
     elif option == 2:
         print("")
+        ipInfoFunc()
+
+        clear()
+
+    elif option == 3:
+        print("")
         passGenFunc()
 
-        input("\n Press any key to continue...")
         clear()
 
     else:
