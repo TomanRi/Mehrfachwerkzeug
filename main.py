@@ -1,6 +1,7 @@
 from ipTracker import getIP
 from passGen import passGenFunc
 from ipInfo import ipInfoFunc
+from nmap import nmapFunc
 import os
 
 clear = lambda: os.system('cls')
@@ -27,6 +28,7 @@ while option != 0:
         print(" [1] IP Tracker")
         print(" [2] IP Info")
         print(" [3] passGen")
+        print(" [4] nmap")
         print(" [0] Exit")
 
     print()
@@ -49,6 +51,14 @@ while option != 0:
     elif option == 3:
         print("")
         passGenFunc()
+
+        clear()
+
+    elif option == 4:
+        print("")
+        nmapFunc()
+
+        input("\n Press any key to exit...")
 
         clear()
 
