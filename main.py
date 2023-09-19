@@ -40,13 +40,9 @@ while option != 0:
         print("")
         getIP()
 
-        clear()
-
     elif option == 2:
         print("")
         ipInfoFunc()
-
-        clear()
 
     elif option == 3:
         print("")
@@ -58,12 +54,9 @@ while option != 0:
         print("")
         nmapFunc()
 
-        input("\n Press any key to exit...")
-
-        clear()
-
     else:
         input("\n Press any key to exit...")
+        
         clear()
         print(logo)
         clear()
