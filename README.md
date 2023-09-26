@@ -7,4 +7,5 @@ You will also need to install requirements.txt => pip install -r requirements.tx
 If you want to use passGen on Linux, you will need to run it with sudo.
 
 
-![image](https://user-images.githubusercontent.com/97634536/216821248-cd04a59f-d7e5-4526-85cb-7a60de1dc98c.png)
+![image](https://github.com/TomanRi/Mehrfachwerkzeug/assets/97634536/9ae22380-3f84-4e5b-a77d-c57f626b4fc2)
+
